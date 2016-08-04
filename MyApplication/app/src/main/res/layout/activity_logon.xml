@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccbbaa"
+    tools:context="com.example.administrator.myapplication.activity.LoseActivity">
+
+    <RelativeLayout
+        android:id="@+id/in_"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#aabbcc">
+
+        <ImageView
+            android:id="@+id/in_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="注册"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/in_"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/in_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/in_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/in_num"
+            android:hint="请输入6-16位的密码"
+            android:password="true"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/in_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/in_pass"
+            android:hint="验证码"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/in_inv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/in_code"
+            android:hint="邀请码(选填)"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/in_sendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/in_pass"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="发送验证码"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/in_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/in_inv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="9dp"
+            android:text="下一步" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

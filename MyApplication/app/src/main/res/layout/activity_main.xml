@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="topBar" />
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/aty_rg"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/firstPage"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/first"
+            android:gravity="center"
+            android:text="dfdf" />
+
+        <RadioButton
+            android:id="@+id/secondPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/first"
+            android:gravity="center"
+            android:text="dfdf" />
+
+        <RadioButton
+            android:id="@+id/thirdPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/first"
+            android:gravity="center"
+            android:text="dfdf" />
+
+        <RadioButton
+            android:id="@+id/fourPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/first"
+            android:gravity="center"
+            android:text="12313" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/aty_rg"
+        android:layout_below="@id/topBar">
+
+        <FrameLayout
+            android:id="@+id/main_fram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
